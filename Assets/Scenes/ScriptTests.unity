@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 42597490}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,7 +1265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 542970289}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chalet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1331,7 +1331,8 @@ GameObject:
   - component: {fileID: 854011272}
   - component: {fileID: 854011274}
   - component: {fileID: 854011273}
-  m_Layer: 0
+  - component: {fileID: 854011275}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1403,6 +1404,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854011271}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &854011275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854011271}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1.9999999, z: 1.0000004}
+  m_Center: {x: 0.0000024437904, y: 0.00000035762787, z: 0.0000028908253}
+--- !u!1 &891634092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
+  m_PrefabInstance: {fileID: 1152416581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &896275277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1441,8 @@ GameObject:
   - component: {fileID: 896275278}
   - component: {fileID: 896275280}
   - component: {fileID: 896275279}
-  m_Layer: 0
+  - component: {fileID: 896275281}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1486,6 +1514,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896275277}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &896275281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896275277}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 2, z: 1.0000004}
+  m_Center: {x: 0.000003874302, y: 0.00000023841858, z: 0.000002771616}
 --- !u!1 &900851341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1546,8 @@ GameObject:
   - component: {fileID: 900851342}
   - component: {fileID: 900851344}
   - component: {fileID: 900851343}
-  m_Layer: 0
+  - component: {fileID: 900851345}
+  m_Layer: 3
   m_Name: TreeModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,6 +1620,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900851341}
   m_Mesh: {fileID: 8491016944179788363, guid: 39dda57e2d7e23d4f843bbd5c20483b3, type: 3}
+--- !u!65 &900851345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900851341}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.35930973, y: 0.35930982, z: 0.038374543}
+  m_Center: {x: 0, y: 0, z: 0.019059777}
 --- !u!1 &935218056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,7 +1684,8 @@ GameObject:
   - component: {fileID: 965392186}
   - component: {fileID: 965392188}
   - component: {fileID: 965392187}
-  m_Layer: 0
+  - component: {fileID: 965392189}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1685,6 +1757,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965392185}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &965392189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965392185}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 2, z: 1.0000002}
+  m_Center: {x: 0.00000005960464, y: -7.2164497e-16, z: -0.0000019967556}
 --- !u!1 &975368160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,10 +2398,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FeelSquashAndStretchChalet
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1488281624}
   m_SourcePrefab: {fileID: 100100000, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
 --- !u!1 &1161554765
 GameObject:
@@ -2541,7 +2641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1271256478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chalet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2678,7 +2778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1274628036}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2712,7 +2812,8 @@ GameObject:
   - component: {fileID: 1295148110}
   - component: {fileID: 1295148112}
   - component: {fileID: 1295148111}
-  m_Layer: 0
+  - component: {fileID: 1295148113}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2784,6 +2885,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295148109}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1295148113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295148109}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1.9999996, z: 1.0000002}
+  m_Center: {x: 0.000003874302, y: -0.00000059604645, z: 0.000002771616}
 --- !u!1 &1343022113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,10 +3033,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FeelSquashAndStretchChalet
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2140511620}
   m_SourcePrefab: {fileID: 100100000, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
 --- !u!1 &1355897307
 GameObject:
@@ -3128,7 +3257,8 @@ GameObject:
   - component: {fileID: 1365228082}
   - component: {fileID: 1365228084}
   - component: {fileID: 1365228083}
-  m_Layer: 0
+  - component: {fileID: 1365228085}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3200,6 +3330,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365228081}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1365228085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365228081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: -0.0000004172325, z: -0.00000008940695}
 --- !u!1 &1380559504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,7 +3362,8 @@ GameObject:
   - component: {fileID: 1380559505}
   - component: {fileID: 1380559507}
   - component: {fileID: 1380559506}
-  m_Layer: 0
+  - component: {fileID: 1380559508}
+  m_Layer: 3
   m_Name: TreeModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3284,6 +3436,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380559504}
   m_Mesh: {fileID: 8491016944179788363, guid: 39dda57e2d7e23d4f843bbd5c20483b3, type: 3}
+--- !u!65 &1380559508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380559504}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.35930973, y: 0.35930982, z: 0.038374543}
+  m_Center: {x: 0, y: 0, z: 0.019059777}
 --- !u!1 &1383810853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +3615,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
   m_PrefabInstance: {fileID: 1152416581}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1488281624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891634092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0236689, y: 0.036152463, z: 0.022088679}
+  m_Center: {x: 0.000000044369447, y: -0.0067969263, z: 0.011042432}
 --- !u!1 &1501263275
 GameObject:
   m_ObjectHideFlags: 0
@@ -3547,7 +3741,8 @@ GameObject:
   - component: {fileID: 1524579977}
   - component: {fileID: 1524579979}
   - component: {fileID: 1524579978}
-  m_Layer: 0
+  - component: {fileID: 1524579980}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3626,6 +3821,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524579976}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1524579980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524579976}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 2, z: 1.0000004}
+  m_Center: {x: 0.000000059604645, y: -1.8041124e-16, z: -0.00000008940697}
 --- !u!1 &1589307384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3675,7 +3891,8 @@ GameObject:
   - component: {fileID: 1644255135}
   - component: {fileID: 1644255137}
   - component: {fileID: 1644255136}
-  m_Layer: 0
+  - component: {fileID: 1644255138}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3747,6 +3964,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644255134}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1644255138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644255134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 2, z: 1.0000004}
+  m_Center: {x: 0.000000059604645, y: -0.00000029802322, z: 0.0000013411045}
 --- !u!1 &1735402568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,7 +3995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735402569}
   - component: {fileID: 1735402570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SquashAndStretch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4114,7 +4352,8 @@ GameObject:
   - component: {fileID: 1823029147}
   - component: {fileID: 1823029149}
   - component: {fileID: 1823029148}
-  m_Layer: 0
+  - component: {fileID: 1823029150}
+  m_Layer: 6
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4130,7 +4369,7 @@ Transform:
   m_GameObject: {fileID: 1823029146}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12027064, y: -0, z: -0, w: 0.99274117}
-  m_LocalPosition: {x: 13.279991, y: -0.08247267, z: 4.6683626}
+  m_LocalPosition: {x: 13.28, y: -0.067, z: 4.77}
   m_LocalScale: {x: 1, y: 1.0446781, z: 0.85392034}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4186,6 +4425,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823029146}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1823029150
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823029146}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0469264, y: 1.9764879, z: 1.0715264}
+  m_Center: {x: -0.05030755, y: -0.007126579, z: 0.0291799}
 --- !u!1 &1824447078
 GameObject:
   m_ObjectHideFlags: 0
@@ -4236,7 +4496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906617826}
   - component: {fileID: 1906617827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SquashAndStretch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4330,7 +4590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072828857}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4461,6 +4721,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 192315826}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2140511617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a91729ce0c49b854f952180202ee6a72, type: 3}
+  m_PrefabInstance: {fileID: 1352115154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2140511620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140511617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0236689, y: 0.03615246, z: 0.022088679}
+  m_Center: {x: 0.000000022422837, y: -0.0067969738, z: 0.011042432}
 --- !u!33 &369900650076774023
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4760,8 +5046,8 @@ Rigidbody:
   m_GameObject: {fileID: 6807813428997256321}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.25
+  m_Drag: 0.7
+  m_AngularDrag: 0.6
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4795,6 +5081,7 @@ MonoBehaviour:
   minScale: {x: 0, y: 0, z: 0}
   maxScale: {x: 0.3, y: 0.3, z: 0.3}
   powerIndicator: {fileID: 7503401489471440534}
+  lineRendererZOffset: 0.01
 --- !u!120 &7503401489471440534
 LineRenderer:
   serializedVersion: 2
@@ -4816,7 +5103,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: ec60e88fd8fdc0d4caae75e367922560, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4842,19 +5129,37 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 2.1927366
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        time: 0.019561768
+        value: 0.081510544
+        inSlope: 0.06478743
+        outSlope: 0.06478743
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.36785153
+      - serializedVersion: 3
+        time: 0.76038545
+        value: 0.1250073
+        inSlope: 0.000067875044
+        outSlope: 0.000067875044
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.14520822
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.8190693
+        value: 0.09783071
+        inSlope: -0.7248171
+        outSlope: -0.7248171
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.14557809
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -4885,7 +5190,7 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_ColorSpace: -1
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
