@@ -24,6 +24,8 @@ public class PlayerScript : MonoBehaviour
     public float lineRendererZOffset = 0.01f;
 
     public MMFeedbacks moveFeedback;
+    public MMFeedbacks dragFeedback;
+    public MMFeedbacks targetFeedback;
 
     private void Start()
     {
@@ -75,6 +77,7 @@ public class PlayerScript : MonoBehaviour
         {
             isDragging = false;
             OnDragEnd();
+            dragFeedback.PlayFeedbacks();
         }
 
         if (isDragging)
@@ -86,7 +89,7 @@ public class PlayerScript : MonoBehaviour
         {
             moveFeedback.PlayFeedbacks(transform.position);
         }
-        
+
         if (rb.velocity.magnitude >= 0.2f)
         {
             selfIndicator.SetActive(false);
@@ -146,6 +149,7 @@ public class PlayerScript : MonoBehaviour
 
         float distance = Vector3.Distance(powerIndicator.GetPosition(0), powerIndicator.GetPosition(1));
         rb.AddForce(-direction * distance * power, ForceMode.Impulse); // Note the negative sign to invert the direction
+        
         powerIndicator.enabled = false;
         selfIndicator.SetActive(true);
         isDragging = false;
@@ -176,7 +180,8 @@ public class PlayerScript : MonoBehaviour
     {
         if (other.CompareTag("Target"))
         {
-            LoadNextScene();
+            targetFeedback.PlayFeedbacks();
+            Invoke("LoadNextScene", 1.5f);
         }
     }
 
