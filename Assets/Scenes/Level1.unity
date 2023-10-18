@@ -165,9 +165,9 @@ GameObject:
   m_Component:
   - component: {fileID: 104040670}
   - component: {fileID: 104040669}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,9 +251,9 @@ GameObject:
   - component: {fileID: 114825323}
   - component: {fileID: 114825322}
   - component: {fileID: 114825321}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Quad
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,9 +462,9 @@ GameObject:
   - component: {fileID: 191275120}
   - component: {fileID: 191275119}
   - component: {fileID: 191275118}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,7 +484,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -566,9 +566,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192315826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4626,9 +4626,9 @@ GameObject:
   - component: {fileID: 2135174378}
   - component: {fileID: 2135174377}
   - component: {fileID: 2135174376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4648,7 +4648,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2

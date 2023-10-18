@@ -28,12 +28,12 @@ public class PlayerScript : MonoBehaviour
     {
         if (transform.localScale == minScale)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            RestartCurrentScene();
             return;  // Exit out of Update for this frame
         }
 
         // Only allow shooting if the ball is almost stationary
-        if (rb.velocity.magnitude < 0.1f)
+        /*if (rb.velocity.magnitude < 0.1f)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -55,23 +55,45 @@ public class PlayerScript : MonoBehaviour
         if (rb.velocity.magnitude > 0.2f)
         {
             transform.localScale = Vector3.MoveTowards(transform.localScale, minScale, 0.00007f);
+        }*/
+        if (Input.GetMouseButtonDown(0))
+        {
+            isDragging = true;
+            OnDragStart();
+        }
+        if (Input.GetMouseButtonUp(0) && isDragging) // Check if dragging flag is true before processing drag end
+        {
+            isDragging = false;
+            OnDragEnd();
+        }
+
+        if (isDragging)
+        {
+            OnDrag();
+        }
+
+        if (rb.velocity.magnitude > 0.2f)
+        {
+            transform.localScale = Vector3.MoveTowards(transform.localScale, minScale, 0.00007f);
         }
     }
 
     void OnDragStart()
     {
+        if (rb.velocity.magnitude >= 0.1f)
+        {
+            isDragging = false;
+            return;
+        }
         startPoint = GetMouseWorldPosition();
         Vector3 adjustedStartPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z + lineRendererZOffset);
         powerIndicator.SetPosition(0, transform.position);
+        powerIndicator.SetPosition(1, transform.position);
         powerIndicator.enabled = true;
     }
 
     void OnDrag()
     {
-        /*Vector3 currentPoint = GetMouseWorldPosition();
-        direction = startPoint - currentPoint;
-        float distance = Vector3.Distance(startPoint, currentPoint);
-        transform.localScale = Vector3.Lerp(maxScale, minScale, Mathf.Clamp01(distance * 0.1f)); // Adjust the 0.1f as needed*/
         Vector3 currentPoint = GetMouseWorldPosition();
         direction = currentPoint - startPoint; // Invert this for opposite drag direction
         float distance = Mathf.Clamp(Vector3.Distance(startPoint, currentPoint), 0, maxDragDistance);
@@ -81,16 +103,17 @@ public class PlayerScript : MonoBehaviour
 
     void OnDragEnd()
     {
-        /* endPoint = GetMouseWorldPosition();
-         direction.Normalize();
-
-         rb.AddForce(direction * power, ForceMode.Impulse); // Adjust the ForceMode as needed
-         transform.localScale = maxScale;*/
+        if (rb.velocity.magnitude >= 0.1f)
+        {
+            powerIndicator.enabled = false; // Disable the line renderer if the object is moving
+            return;
+        }
         direction.Normalize();
 
         float distance = Vector3.Distance(powerIndicator.GetPosition(0), powerIndicator.GetPosition(1));
         rb.AddForce(-direction * distance * power, ForceMode.Impulse); // Note the negative sign to invert the direction
         powerIndicator.enabled = false;
+        isDragging = false;
     }
 
     Vector3 GetMouseWorldPosition()
@@ -98,7 +121,7 @@ public class PlayerScript : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        int layerMask = ~(LayerMask.GetMask("Trees", "Chalet", "Fence", "Border"));
+        int layerMask = ~(LayerMask.GetMask("Trees", "Chalet", "Fence", "Border", "Target"));
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
         {
@@ -113,5 +136,22 @@ public class PlayerScript : MonoBehaviour
         }
 
         return Vector3.zero;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Target"))
+        {
+            LoadNextScene();
+        }
+    }
+
+    void LoadNextScene()
+    {
+        int nextSceneIndex = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings;
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+    void RestartCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
